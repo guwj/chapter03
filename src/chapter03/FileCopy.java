@@ -12,7 +12,7 @@ public class FileCopy {
 			fis = new FileInputStream("배경사진.jpg");
 			fos = new FileOutputStream("배경사진.back.jpg");
 
-			int data = -1;
+			int data = -1;			//----------------
 			while((data = fis.read()) != -1){
 				fos.write(data);
 				
@@ -23,7 +23,7 @@ public class FileCopy {
 			System.out.println("error" + ex);
 		} finally {
 			try {
-				if (fis != null) {
+				if (fis != null) {	//----------------
 					fis.close();
 				}
 
